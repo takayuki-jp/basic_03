@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+
+/* 基本
+====================================================== */
+html {
+  font-size: 100%;
+}
+/* * {
+  outline: 2px red solid;
+} */
+
+body {
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', meiryo, 'Noto Serif JP', sans-serif;
+  background-color: #fff;
+  box-sizing: border-box;
+  /* max-width: 1280px; */
+}
+h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* 共通
+====================================================== */
+.content-width  {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* header
+====================================================== */
+#header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 46px 0 26px;
+  border-bottom: 1px solid #C3C3C3;
+}
+.shop-logo {
+  width: 109px;
+  margin: 0 auto 36px;
+  line-height: 1px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+nav li {
+  font-family: "Raleway";
+  font-size: 0.875rem;
+}
+
+/* main
+====================================================== */
+.item-wrap {
+  margin-top: 50px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* item-image */
+.item-img {
+  width: 50%;
+}
+
+/* item-detail */
+.item-detail {
+  width: 41%;
+}
+.item-detail h2 {
+  font-size: 1em;
+  font-weight: 700;
+  padding: 21px 0 22px;
+  border-top: 1px solid #C3C3C3;
+  border-bottom: 1px solid #C3C3C3;
+}
+.item-desc .desc {
+  margin: 20px 0 0;
+}
+.item-desc .price {
+  margin: 30px 0 40px;
+}
+.item-desc .price span {
+  vertical-align: middle;
+}
+
+/* サイズ選択 */
+.size-select {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.size-select tr th,
+.size-select tr td {
+  border-bottom: 1px solid #C3C3C3;
+  border-right: 1px solid #C3C3C3;
+}
+.size-select tr:last-child th,
+.size-select tr:last-child td {
+  border-bottom: none;
+}
+.size-select th:last-child,
+.size-select td:last-child {
+  border-right: none;
+}
+
+
+.size-select th,
+.size-select td {
+  width: 20%;
+  padding: 10px 0;
+  text-align: center;
+}
+.size-select th:last-child {
+  width: 60%;
+}
+
+.size-select select {
+  width: 100%;
+  margin: 10px;
+  padding-left: 10px;
+  line-height: calc(21 / 12);
+  border: 1px solid #C3C3C3;
+}
